@@ -13,12 +13,11 @@ This scraper is under active development. If you have any feature requests you c
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Ultimate Proxy Scraper that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on Ultimate Proxy Scraper that should be visited. Possible fields are:
 
-| Field                | Type    | Description                                                                                                                                                                                                    |
-| -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| maxItems             | Integer | (optional) You can limit scraped products. This should be useful when you search through the big subcategories.                                                                                                |
-| proxy                | Object  | Proxy configuration                                                                                                                                                                                            |
+- `maxItems`: (Optional) (Number) If you want to retrieve a certain amount of proxies from the actor, you can define this number.
+
+- `proxy`: (Required) (Proxy Object) Proxy configuration.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
